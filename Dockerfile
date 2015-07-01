@@ -3,7 +3,7 @@ MAINTAINER cassiuschen "chzsh1995@gmail.com"
 
 RUN apt-get update
 RUN apt-get -y upgrade
-RUN apt-get -y install gcc g++ make automake autoconf curl wget git-core
+RUN apt-get -y install gcc g++ make automake autoconf curl wget git-core python2.7
 WORKDIR /var
 RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
 RUN apt-get install -y nodejs build-essential libexpat-dev 
