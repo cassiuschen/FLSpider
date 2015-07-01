@@ -1,0 +1,33 @@
+{
+  "name": "FLAnalyzer",
+  "description": "FLAnalyzer是一款用于竞彩足球数据采集、分析的Console App。",
+  "version": "0.0.2",
+  "private": true,
+  "author": {
+    "name": "烧炖",
+    "email": "swfdong@gmail.com",
+    "url": "http://seiia.com"
+  },
+  "dependencies": {
+    "body-parser": "^1.10.1",
+    "brain": "^0.7.0",
+    "cheerio": "^0.18.0",
+    "colors": "^1.1.0",
+    "commander": "^2.6.0",
+    "compression": "^1.3.0",
+    "errorhandler": "^1.3.2",
+    "eventproxy": "^0.3.2",
+    "iconv": "^2.1.5",
+    "jsonfile": "^2.0.0",
+    "lodash": "^2.4.1",
+    "method-override": "^1.0.2",
+    "mongoose": "3.8.10",
+    "morgan": "^1.5.1",
+    "needle": ">0.8.0",
+    "nostradamus": "^0.1.0",
+    "prompt": "^0.2.14",
+    "tracer": "^0.7.3",
+    "validator": "^3.27.0",
+    "xml2js": "^0.4.4"
+  }
+}
