@@ -18,7 +18,12 @@ var Game        = require('../models/game');
 var FIRST_DATE = '2009-11-17';
 //var FIRST_DATE = '2015-06-21';
 
-mongoose.connect(dbconfig.url);
+if (process.env.NODE_ENV === 'docker') {
+  mongoose.connect('mongodb://' + process.env.MONGODB_USERNAME + ':' + process.env.MONGODB_PASSWORD + '@' + process.env.MONGODB_HOST + '/' + process.env.MONGODB_DATABASE);
+} else {
+  mongoose.connect(dbconfig.url);
+}
+
 mongoose.connection.on('error', function () {
   logger.error('数据库连接出错');
 }); 
