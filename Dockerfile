@@ -6,7 +6,7 @@ RUN apt-get -y upgrade
 RUN apt-get -y install gcc g++ make automake autoconf curl wget git-core
 WORKDIR /var
 RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
-RUN apt-get install -y nodejs build-essential
+RUN apt-get install -y nodejs build-essential libexpat-dev 
 EXPOSE 22
 EXPOSE 80
 EXPOSE 3000
@@ -18,4 +18,4 @@ WORKDIR /var/data
 ADD ./ /var/data/spider
 WORKDIR /var/data/spider
 RUN mkdir -pv log
-RUN npm install --verbose
+RUN npm install
